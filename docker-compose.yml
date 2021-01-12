@@ -1,0 +1,47 @@
+version: '2'
+#Solución docker-compose entrega 2: Nifi + ElasticSearch + Kibana
+services:
+  
+  elasticsearch:
+    image: 'elasticsearch:7.3.0'
+    hostname: elasticsearch
+    container_name: elasticsearchEJ2
+    ports:
+      - '9200:9200'
+      - '9300:9300'
+    environment:
+      - discovery.type=single-node
+      
+  kibana:
+    image: 'kibana:7.3.0'
+    hostname: kibana
+    container_name: kibanaEJ2
+    ports:
+      - '5601:5601'
+    environment:
+      - elasticsearch.hosts=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+
+  nifi:
+    image: apache/nifi:latest
+    container_name: nifiEJ2
+    restart: always
+    volumes:
+      - ./nifi/:/home/nifi/
+    ports:
+      - '8090:8090'
+    environment:
+      - NIFI_WEB_HTTP_PORT=8090
+
+  nifi-registry:
+    image: apache/nifi-registry:latest
+    container_name: nifiregistryEJ2
+    restart: always
+    ports:
+      - 18080:18080  
+
+
+networks:
+  default:
+    driver: bridge
