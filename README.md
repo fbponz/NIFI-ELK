@@ -1,5 +1,9 @@
 # Entrega 2-NIFI_ELK
 
+- Alumno:  [Fco de Borja Ponz](https://github.com/fbponz)
+- Docente: [Pedro Nieto](https://github.com/a10pepo)
+
+
 ## Enunciado entrega 2:
 
 Usando nifi+ELK debéis presentar una solución que muestre sobre un mapa la disposición de delitos presentes en esta api:
