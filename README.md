@@ -124,8 +124,8 @@ Reemplazamos la etiqueta "Latitude" por "Lat" mediante la utilización del proce
 
 Una vez tenemos los datos tratados vamos introducirlos en elastic Search, mediante la utilización del procesador PutElasticSearch con la siguiente configuración:
 
-![PutElasticSearch_1_2](./imagenes/Nifi_PutElasticSearch_1_2.png)
-![PutElasticSearch_2_2](./imagenes/Nifi_PutElasticSearch_2_2.png)
+![PutElasticSearch_1_2](./imagenes/NIFI_PutElasticSearch_1_2.png)
+![PutElasticSearch_2_2](./imagenes/NIFI_PutElasticSearch_2_2.png)
 
 El fichero template que contiene esta incluido en la carpeta "nifi" que hay dentro del repositorio.
 
