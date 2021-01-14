@@ -177,6 +177,6 @@ Aquí ya podemos volver al apartado de dashboard para visualizar los datos, en t
 
 * Incluir nuevas ciudad como: [SanFrancisco](https://data.sfgov.org/resource/vw6y-z8j6.json), [Chicago](https://data.cityofchicago.org/resource/v6vf-nfxy.json), [Nashville](https://data.nashville.gov/resource/7qhx-rexh.json), [LosAngeles](https://data.lacity.org/resource/az43-p47q.json). 
 
-* Modificar la forma de nombras indexar los documentos, para poder gestionar varias ciudades.
+* Modificar la forma de nombrar los index de los documentos, para poder ingestar varias ciudades.
 
 * Incluir alguna otra métrica en el dashboard de kibana.
